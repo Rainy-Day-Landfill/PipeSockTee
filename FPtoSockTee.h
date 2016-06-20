@@ -5,20 +5,31 @@
 #ifndef LINUX_IPC_TOOLS_FPTOSOCKTEE_H
 #define LINUX_IPC_TOOLS_FPTOSOCKTEE_H
 
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include "FPtoSockTee.h"
 #include <string>
 
-class FPtoSockTee
-{
-    private:
-        rxFilePipe rxFP;
-};
+//class FPtoSockTee
+//{
+//private:
+//    rxFilePipe rxFP;
+    // Socket txSocket;
+//};
 
 class rxFilePipe
 {
-    public:
-        std::int ERRNO;
-        std::string filename;
-        rxFilePipe();
-};
+private:
+    int errorlevel;
+    const char *filename;
+    int handle;
 
+public:
+    rxFilePipe(const char *fname);
+
+    ~rxFilePipe();
+
+    void getMessage(std::string *Message);
+};
 #endif //LINUX_IPC_TOOLS_FPTOSOCKTEE_H
