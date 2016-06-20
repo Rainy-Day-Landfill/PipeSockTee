@@ -37,7 +37,7 @@ class rxFilePipe
         void rxFilePipe::getMessage(std::string *Message)
         {
             char c;
-            while (c != '\0')
+            while ((c = getc( this->handle )) != '\0' && c != EOF)
             {
 
             }

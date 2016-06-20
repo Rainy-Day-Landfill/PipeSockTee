@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="716ee076-679e-493b-99ac-2fd8b1ae81e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FPtoSockTee.cpp" afterPath="$PROJECT_DIR$/FPtoSockTee.cpp" />
     </list>
@@ -60,8 +59,8 @@
       <file leaf-file-name="FPtoSockTee.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FPtoSockTee.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76608187">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.7426901">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
               <folding>
                 <element signature="e#40#61#0" expanded="true" />
               </folding>
@@ -211,6 +210,13 @@
       <option name="number" value="Default" />
       <updated>1466299132069</updated>
     </task>
+    <task id="LOCAL-00001" summary="few lines of rxFilePipe class added, nowhere near complete">
+      <created>1466389028268</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1466389028268</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -249,6 +255,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="few lines of rxFilePipe class added, nowhere near complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="few lines of rxFilePipe class added, nowhere near complete" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -282,8 +292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FPtoSockTee.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76608187">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.7426901">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
             <element signature="e#40#61#0" expanded="true" />
           </folding>
