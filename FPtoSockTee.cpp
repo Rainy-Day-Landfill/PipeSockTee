@@ -2,18 +2,44 @@
 // Created by phanes on 6/19/16.
 //
 
+#include <sys/stat.h>
+#include <bits/fcntl-linux.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include "FPtoSockTee.h"
 
 class FPtoSockTee
 {
-private:
-    rxFilePipe rxFP;
+    private:
+        rxFilePipe rxFP;
 };
 
 class rxFilePipe
 {
-public:
-    std::int ERRNO;
-    std::string filename;
-    rxFilePipe();
+    private:
+        std::int errorlevel;
+        std::string filename;
+        std::int handle;
+
+    public:
+        rxFilePipe( std::string fname )
+        {
+            this.filename = fname;
+            this.errorlevel = mkfifo( this.filename, 0666 );
+            this.handle = open( this.filename, O_RDONLY | O_NONBLOCK );
+        }
+        ~rxFilePipe()
+        {
+            close( this.handle );
+            unlink( this.filename );
+        }
+
+        void rxFilePipe::getMessage(std::string *Message)
+        {
+            char c;
+            while (c != '\0')
+            {
+
+            }
+        }
 };
